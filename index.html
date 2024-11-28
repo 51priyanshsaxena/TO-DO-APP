@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-container">
+    <div class="header">
+        <h1>To-Do App</h1>
+    </div>
+
+    <div class="list-creator">
+        <input type="text" id="listNameInput" placeholder="New List Name">
+        <button id="addListButton">Create List</button>
+    </div>
+
+    <div class="task-creator">
+        <select id="listSelect">
+            <option value="">Select List</option>
+        </select>
+        <input type="text" id="taskInput" placeholder="Add a task...">
+        <input type="datetime-local" id="taskTime">
+        <button id="addTaskButton">Add Task</button>
+    </div>
+
+    <div class="task-display">
+        <h3 id="currentListName">Tasks</h3>
+        <ul id="taskList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

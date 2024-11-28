@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #923030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    background-color: gray;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.list-creator, .task-creator {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input, button, select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid blue;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    width: 100%;
+}
+
+.task-display h3 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    background-color: green;
+    margin: 10px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #65a165;
+}
+
+button.edit-btn, button.complete-btn, button.delete-btn {
+    background-color: #ffa500;
+    color: orangered;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.delete-btn {
+    background-color: #f44336;
+}
+
+button.delete-btn:hover, button.edit-btn:hover, button.complete-btn:hover {
+    background-color: #d32f2f;
+}
+
+button.complete-btn {
+    background-color: #4CAF50;
+}
+
+button.complete-btn:hover {
+    background-color: #45a049;
+}
